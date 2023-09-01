@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    	td {
+        	width:100px;
+        	height: 100px;
+        	border: 1px solid black;
+    	}
+		.r{
+			background-color: red;
+		}
+	
+		.b{
+			background-color: blue;
+		}
+		.y{
+			background-color:yellow;
+		}
+		.g{
+			background-color:green;
+		}
+		button{
+			width: 45px;
+			height: 20px;
+		}
+
+	</style>
+	
+	
+</head>
+<body>
+	<div>
+	<table>
+    	<tr>
+        	<td class="box" onclick="changeColor(0)"></td>
+        	<td class="box" onclick="changeColor(1)"></td>
+        	<td class="box" onclick="changeColor(2)"></td>
+    	</tr>
+    	<tr>
+        	<td class="box" onclick="changeColor(3)"></td>
+        	<td class="box" onclick="changeColor(4)"></td>
+        	<td class="box" onclick="changeColor(5)"></td>
+    	</tr>
+    	<tr>
+        	<td class="box" onclick="changeColor(6)"></td>
+        	<td class="box" onclick="changeColor(7)"></td>
+        	<td class="box" onclick="changeColor(8)"></td>
+    	</tr>
+	</table>
+	<br>
+	<button class="r"  onclick="selectColor('red')"></button>
+	<button class="b"   onclick="selectColor('blue')"></button>
+	<button  class="g"  onclick="selectColor('green')"></button>
+	<button   class="y" onclick="selectColor('yellow')"></button>
+	<br>
+	<button onclick="resetColors()">Reset</button>
+</div>
+	<script src="main.js"></script>
+</body>
+</html>
